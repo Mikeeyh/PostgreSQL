@@ -1,0 +1,5 @@
+SELECT 
+FROM TABLE
+WHERE salary is NOT NULLORDER BY salary DESC / ASC
+LIMIT 1 
+-- or other number

@@ -1,0 +1,11 @@
+-- Gives us all countries wiithout duplicated ones
+SELECT
+    DISTINCT country
+FROM person 
+ORDER BY country
+
+-- Gives us all countries of people without duplicated ages
+SELECT
+    DISTINCT country, age
+FROM person 
+ORDER BY country
