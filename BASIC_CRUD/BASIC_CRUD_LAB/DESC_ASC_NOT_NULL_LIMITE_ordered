@@ -1,0 +1,6 @@
+SELECT 
+FROM TABLE
+WHERE salary is NOT NULL
+ORDER BY salary DESC / ASC
+LIMIT 1 
+-- or other number

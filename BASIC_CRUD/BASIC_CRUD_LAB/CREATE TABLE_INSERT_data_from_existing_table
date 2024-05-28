@@ -1,0 +1,20 @@
+CREATE TABLE new_worker AS
+SELECT id, first_name, last_name
+from worker
+-- Creating a new table named new_worker and 
+-- selecting id, fn, ln from already existing table named worker
+-- So, the new table contains the info from old one
+
+CREATE TABLE better_table(
+    id SERIAL PRIMARY KEY NOT NULL,
+    first_name varchar(20),
+    last_name varchar(20),
+    age int DEFAULT 0
+);
+
+INSERT INTO better_table (first_name, last_name)
+SELECT first_name, last_name from worker
+WHERE id < 8
+
+-- Creating new table
+-- Then insert data from old table
