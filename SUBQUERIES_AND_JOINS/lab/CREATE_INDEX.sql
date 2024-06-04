@@ -1,0 +1,2 @@
+CREATE INDEX first_name_tablename_idx
+ON tablename(first_name)
