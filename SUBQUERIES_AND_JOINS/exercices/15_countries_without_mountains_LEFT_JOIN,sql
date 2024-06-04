@@ -1,0 +1,13 @@
+SELECT
+    COUNT(*)
+FROM
+	countries as c
+LEFT JOIN 
+	mountains_countries as mc
+USING
+	(country_code)
+WHERE
+	mc.mountain_id IS NULL
+
+-- We use LEFT JOIN to retrive countries where mountain_id is NULL too
+-- Then we use WHERE to retrive only the records with mountain_id NULL
